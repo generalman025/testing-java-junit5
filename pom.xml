@@ -39,7 +39,7 @@
         <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <junit-platform.version>5.3.1</junit-platform.version>
+        <junit-platform.version>5.12.2</junit-platform.version>
     </properties>
 
     <dependencies>
@@ -75,6 +75,12 @@
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
             <version>3.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit-platform.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
